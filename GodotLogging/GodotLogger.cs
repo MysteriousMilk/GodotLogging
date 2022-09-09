@@ -41,7 +41,9 @@ namespace Godot.Logging
         /// <param name="message">The debug message to log.</param>
         public static void LogDebug(object message)
         {
+#if DEBUG
             Instance.Log(LogLevel.Debug, message);
+#endif
         }
 
         /// <summary>
