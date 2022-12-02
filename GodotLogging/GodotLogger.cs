@@ -105,6 +105,9 @@ namespace Godot.Logging
 
             foreach (var target in Configuration.Targets)
                 target.Write(logLevel, logEvent);
+
+            if (logLevel == LogLevel.Error)
+                GD.PushError(logEvent.Message);
         }
 
         /// <summary>
