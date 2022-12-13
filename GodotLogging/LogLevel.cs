@@ -1,4 +1,4 @@
-﻿namespace Godot.Logging
+namespace Godot.Logging
 {
     /// <summary>
     /// Enumeration for a log entry's level or category.

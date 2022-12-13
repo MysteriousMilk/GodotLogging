@@ -1,4 +1,4 @@
-﻿using System.Text;
+using System.Text;
 
 namespace Godot.Logging
 {
@@ -16,7 +16,7 @@ namespace Godot.Logging
         }
     }
 
-    public class FormatRule
+    public partial class FormatRule
     {
         /// <summary>
         /// Color to associate with the log event if the target supports color.

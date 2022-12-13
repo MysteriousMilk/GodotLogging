@@ -1,8 +1,8 @@
-﻿using System.Text;
+using System.Text;
 
 namespace Godot.Logging.Targets
 {
-    public class BBTextTarget : MemoryTarget
+    public partial class BBTextTarget : MemoryTarget
     {
         /// <summary>
         /// Default constructor for a <see cref="BBTextTarget"/>.

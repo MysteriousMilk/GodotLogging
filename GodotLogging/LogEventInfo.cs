@@ -1,9 +1,9 @@
-﻿namespace Godot.Logging
+namespace Godot.Logging
 {
     /// <summary>
     /// Contains information about a log event.
     /// </summary>
-    public class LogEventInfo
+    public partial class LogEventInfo
     {
         /// <summary>
         /// The type name of the class from which the log event was triggered.

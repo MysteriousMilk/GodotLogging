@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
 namespace Godot.Logging.Targets
 {
@@ -45,7 +45,7 @@ namespace Godot.Logging.Targets
         {
             var format = config.GetFormat(logLevel);
 
-            string output = string.Copy(format.FormatText);
+            string output = (string)format.FormatText.Clone();
             output = output.Replace("${level}", logLevel.ToString());
             output = output.Replace("${classname}", logEvent.ClassName);
             output = output.Replace("${methodname}", logEvent.MethodName);

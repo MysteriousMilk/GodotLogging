@@ -1,4 +1,4 @@
-﻿using Godot.Logging.Targets;
+using Godot.Logging.Targets;
 using System;
 using System.Collections.Generic;
 
@@ -7,7 +7,7 @@ namespace Godot.Logging
     /// <summary>
     /// Configuration for the logger.
     /// </summary>
-    public class LogConfiguration
+    public partial class LogConfiguration
     {
         private Dictionary<string, LogTarget> targets;
         private Dictionary<LogLevel, FormatRule> formattingRules;

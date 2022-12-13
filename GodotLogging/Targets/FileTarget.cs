@@ -1,8 +1,8 @@
-﻿namespace Godot.Logging.Targets
+namespace Godot.Logging.Targets
 {
-    public class FileTarget : LogTarget
+    public partial class FileTarget : LogTarget
     {
-        private File file;
+        private FileAccess file;
         private string filename;
 
         /// <summary>
@@ -19,8 +19,7 @@
         {
             this.filename = filename;
 
-            file = new File();
-            file.Open(filename, File.ModeFlags.Write);
+            file = FileAccess.Open(filename, FileAccess.ModeFlags.Write);
         }
 
         /// <summary>

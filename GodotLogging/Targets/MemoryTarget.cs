@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Text;
 
 namespace Godot.Logging.Targets
@@ -6,7 +6,7 @@ namespace Godot.Logging.Targets
     /// <summary>
     /// In-memory log target.
     /// </summary>
-    public class MemoryTarget : LogTarget
+    public partial class MemoryTarget : LogTarget
     {
         protected LinkedList<string> lineBuffer;
         protected int maxLineCount;
