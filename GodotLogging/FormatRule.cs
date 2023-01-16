@@ -16,7 +16,7 @@ namespace Godot.Logging
         }
     }
 
-    public partial class FormatRule
+    public class FormatRule
     {
         /// <summary>
         /// Color to associate with the log event if the target supports color.

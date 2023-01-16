@@ -6,7 +6,7 @@ namespace Godot.Logging.Targets
     /// <summary>
     /// In-memory log target.
     /// </summary>
-    public partial class MemoryTarget : LogTarget
+    public class MemoryTarget : LogTarget
     {
         protected LinkedList<string> lineBuffer;
         protected int maxLineCount;

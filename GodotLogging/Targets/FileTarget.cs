@@ -1,6 +1,6 @@
 namespace Godot.Logging.Targets
 {
-    public partial class FileTarget : LogTarget
+    public class FileTarget : LogTarget
     {
         private FileAccess file;
         private string filename;

@@ -6,7 +6,7 @@ namespace Godot.Logging.Targets
     /// A <see cref="LogTarget"/> that uses the GD.Print methods
     /// as a log output source.
     /// </summary>
-    public partial class GDPrintTarget : LogTarget
+    public class GDPrintTarget : LogTarget
     {
         /// <summary>
         /// Default constructor for a <see cref="GDPrintTarget"/>.

@@ -2,7 +2,7 @@ using System.Text;
 
 namespace Godot.Logging.Targets
 {
-    public partial class BBTextTarget : MemoryTarget
+    public class BBTextTarget : MemoryTarget
     {
         /// <summary>
         /// Default constructor for a <see cref="BBTextTarget"/>.

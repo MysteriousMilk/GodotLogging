@@ -7,7 +7,7 @@ namespace Godot.Logging
     /// <summary>
     /// Configuration for the logger.
     /// </summary>
-    public partial class LogConfiguration
+    public class LogConfiguration
     {
         private Dictionary<string, LogTarget> targets;
         private Dictionary<LogLevel, FormatRule> formattingRules;
