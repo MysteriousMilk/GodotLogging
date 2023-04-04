@@ -8,10 +8,10 @@ namespace Godot.Logging
         {
             var builder = new StringBuilder();
             builder.Append("#");
-            builder.Append(color.a8.ToString("X2"));
-            builder.Append(color.r8.ToString("X2"));
-            builder.Append(color.g8.ToString("X2"));
-            builder.Append(color.b8.ToString("X2"));
+            builder.Append(color.A8.ToString("X2"));
+            builder.Append(color.R8.ToString("X2"));
+            builder.Append(color.G8.ToString("X2"));
+            builder.Append(color.B8.ToString("X2"));
             return builder.ToString();
         }
     }
