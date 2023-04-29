@@ -1,6 +1,6 @@
-using System.Diagnostics;
-
 namespace Godot.Logging;
+
+using System.Diagnostics;
 
 /// <summary>
 /// The logger singleton. Used to record log

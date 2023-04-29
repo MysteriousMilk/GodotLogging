@@ -1,8 +1,8 @@
+namespace Godot.Logging;
+
 using Godot.Logging.Targets;
 using System;
 using System.Collections.Generic;
-
-namespace Godot.Logging;
 
 /// <summary>
 /// Configuration for the logger.

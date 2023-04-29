@@ -1,6 +1,6 @@
-using Godot;
-
 namespace Godot.Logging.Targets;
+
+using Godot;
 
 /// <summary>
 /// A <see cref="LogTarget"/> that uses the GD.Print methods

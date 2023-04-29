@@ -1,6 +1,6 @@
-using System.Text;
-
 namespace Godot.Logging;
+
+using System.Text;
 
 public static class ColorExtensions
 {

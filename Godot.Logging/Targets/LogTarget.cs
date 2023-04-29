@@ -1,6 +1,6 @@
-using System.Collections.Generic;
-
 namespace Godot.Logging.Targets;
+
+using System.Collections.Generic;
 
 /// <summary>
 /// Base class for a log target.
