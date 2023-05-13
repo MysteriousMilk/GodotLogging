@@ -1,6 +1,6 @@
 ﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Godot.Logging", "Godot.Logging/Godot.Logging.csproj", "{C85D1AD1-BFF6-4FBA-B485-A22A3A088F9D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMP.Godot.Logging", "MMP.Godot.Logging/MMP.Godot.Logging.csproj", "{C85D1AD1-BFF6-4FBA-B485-A22A3A088F9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

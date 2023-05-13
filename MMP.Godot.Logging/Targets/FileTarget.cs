@@ -1,4 +1,4 @@
-namespace Godot.Logging.Targets
+namespace MMP.Godot.Logging.Targets
 {
     public class FileTarget : LogTarget
     {

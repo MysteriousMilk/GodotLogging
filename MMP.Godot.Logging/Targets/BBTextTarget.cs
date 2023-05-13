@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace Godot.Logging.Targets
+namespace MMP.Godot.Logging.Targets
 {
     public class BBTextTarget : MemoryTarget
     {

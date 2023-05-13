@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Godot.Logging.Targets
+namespace MMP.Godot.Logging.Targets
 {
     /// <summary>
     /// In-memory log target.
