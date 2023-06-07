@@ -1,7 +1,6 @@
-using Godot;
 using System.Diagnostics;
 
-namespace MMP.Godot.Logging
+namespace Godot.Logging
 {
     /// <summary>
     /// The logger singleton. Used to record log

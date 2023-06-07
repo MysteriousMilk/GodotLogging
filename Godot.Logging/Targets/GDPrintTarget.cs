@@ -1,6 +1,6 @@
 using Godot;
 
-namespace MMP.Godot.Logging.Targets
+namespace Godot.Logging.Targets
 {
     /// <summary>
     /// A <see cref="LogTarget"/> that uses the GD.Print methods

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace MMP.Godot.Logging.Targets
+namespace Godot.Logging.Targets
 {
     /// <summary>
     /// Base class for a log target.

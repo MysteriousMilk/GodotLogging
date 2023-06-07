@@ -1,4 +1,4 @@
-namespace MMP.Godot.Logging
+namespace Godot.Logging
 {
     /// <summary>
     /// Contains information about a log event.

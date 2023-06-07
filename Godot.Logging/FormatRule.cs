@@ -1,18 +1,9 @@
-using Godot;
 using System.Text;
 
-namespace MMP.Godot.Logging
+namespace Godot.Logging
 {
-    /// <summary>
-    /// Extension methods for <see cref="Color"/> struct.
-    /// </summary>
     public static class ColorExtensions
     {
-        /// <summary>
-        /// Converts a <see cref="Color"/> to a color hexidecimal string.
-        /// </summary>
-        /// <param name="color">The color object.</param>
-        /// <returns>Hexidecimal string.</returns>
         public static string ToHexArgb(this Color color)
         {
             var builder = new StringBuilder();
@@ -25,9 +16,6 @@ namespace MMP.Godot.Logging
         }
     }
 
-    /// <summary>
-    /// Class that describes how to format a log entry.
-    /// </summary>
     public class FormatRule
     {
         /// <summary>
