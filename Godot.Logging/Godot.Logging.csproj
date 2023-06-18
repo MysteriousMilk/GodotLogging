@@ -5,5 +5,23 @@
     <RootNamespace>Godot.Logging</RootNamespace>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <FileVersion>1.1.0.0</FileVersion>
+    <Title>Godot Logging</Title>
+    <Version>$(AssemblyVersion)</Version>
+    <Description>A logging library for Godot 4 (C#).</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/MysteriousMilk/GodotLogging</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Godot;Godot4;gamedev;Game Development;C#</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 </Project>
