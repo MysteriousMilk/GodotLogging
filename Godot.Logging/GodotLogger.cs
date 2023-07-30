@@ -1,5 +1,6 @@
 namespace Godot.Logging;
 
+using Godot.Logging.Targets;
 using System.Diagnostics;
 
 /// <summary>
@@ -17,6 +18,7 @@ public sealed class GodotLogger
 
     private GodotLogger()
     {
+        EnsureConfiguration();
     }
 
     public static GodotLogger Instance
@@ -133,5 +135,14 @@ public sealed class GodotLogger
         }
 
         return logEvent;
+    }
+
+    private void EnsureConfiguration()
+    {
+        if (Configuration == null)
+        {
+            Configuration = new LogConfiguration();
+            Configuration.RegisterTarget(new GDPrintTarget("GodotConsole"));
+        }
     }
 }
