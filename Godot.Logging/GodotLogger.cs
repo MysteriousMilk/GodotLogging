@@ -1,7 +1,9 @@
 namespace Godot.Logging;
 
 using Godot.Logging.Targets;
+using System;
 using System.Diagnostics;
+using System.Text;
 
 /// <summary>
 /// The logger singleton. Used to record log
@@ -84,6 +86,16 @@ public sealed class GodotLogger
     {
         Instance.Log(LogLevel.Error, message);
     }
+
+    /// <summary>
+    /// Logs an exception with an optional message.
+    /// </summary>
+    /// <param name="ex">The exception to log.</param>
+    /// <param name="message">(Optional) A message to include with the exception.</param>
+    public static void LogException(Exception ex, object message = null)
+    {
+        Instance.Log(LogLevel.Exception, message, ex);
+    }
     #endregion
 
     /// <summary>
@@ -110,6 +122,43 @@ public sealed class GodotLogger
 
         if (logLevel == LogLevel.Error)
             GD.PushError(logEvent.Message);
+    }
+
+    /// <summary>
+    /// Adds an entry to the log at the given <see cref="LogLevel"/>.
+    /// </summary>
+    /// <param name="logLevel">Log level to record the entry at.</param>
+    /// <param name="message">The log entry message.</param>
+    /// <param name="ex">The exception to log.</param>
+    public void Log(LogLevel logLevel, object message, Exception ex)
+    {
+        var logEvent = CreateLogEvent();
+
+        StringBuilder msgBuilder = new StringBuilder();
+
+        if (message != null)
+        {
+            msgBuilder.Append(message.ToString());
+            msgBuilder.Append(Environment.NewLine);
+            msgBuilder.Append("    ");
+        }
+
+        msgBuilder.Append(ex.Message);
+
+        if (Configuration.IncludeExceptionCallStack && 
+            !string.IsNullOrEmpty(ex.StackTrace))
+        {
+            msgBuilder.Append(Environment.NewLine);
+            msgBuilder.Append("    ");
+            msgBuilder.Append(ex.StackTrace);
+        }
+
+        logEvent.Message = msgBuilder.ToString();
+
+        foreach (var target in Configuration.Targets)
+            target.Write(logLevel, logEvent);
+
+        GD.PushError(logEvent.Message);
     }
 
     /// <summary>

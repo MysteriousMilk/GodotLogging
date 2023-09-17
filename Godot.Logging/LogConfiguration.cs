@@ -29,6 +29,16 @@ public class LogConfiguration
     }
 
     /// <summary>
+    /// Indicates if the call stack should be printed to the log when
+    /// logging an exception.
+    /// </summary>
+    public bool IncludeExceptionCallStack
+    {
+        get;
+        set;
+    } = false;
+
+    /// <summary>
     /// Default constructor.
     /// </summary>
     public LogConfiguration()

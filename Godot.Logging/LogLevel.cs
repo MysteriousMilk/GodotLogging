@@ -9,5 +9,6 @@ public enum LogLevel
     Info,
     Warn,
     Error,
-    Command
+    Command,
+    Exception
 }
