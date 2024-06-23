@@ -1,10 +1,7 @@
 # Godot Logging Library
-[![NuGet version (Godot.Logging)](https://img.shields.io/badge/nuget-v1.1.2-blue?style=flat-square)](https://www.nuget.org/packages/Godot.Logging/1.1.2/)
+[![NuGet version (Godot.Logging)](https://img.shields.io/badge/nuget-v1.1.3-blue?style=flat-square)](https://www.nuget.org/packages/Godot.Logging/1.1.3/)
 
 A C# logging library for the Godot game engine. The library provides several Log Targets needed to log messages in a variety of formats. This is intended to work with the Mono version of Godot (C#). Just drop the code in with your main project and you can start logging messages right away.
-
-## Repository
-The main branch [*origin/main*] will be kept in line with the latest release of Godot. Currently it is syncing with Godot 4.0.2.
 
 ## Usage
 Logging can be configured for use in just a few lines of code.
