@@ -35,7 +35,7 @@ public class BBTextTarget : MemoryTarget
 
         var builder = new StringBuilder();
         builder.Append("[color=");
-        builder.Append(format.TextColor.ToHexArgb());
+        builder.Append(format.TextColor.ToHexRgb());
         builder.Append("]");
         builder.Append(lineBuffer.Last.Value);
         builder.Append("[/color]");

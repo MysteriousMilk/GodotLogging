@@ -14,6 +14,16 @@ public static class ColorExtensions
         builder.Append(color.B8.ToString("X2"));
         return builder.ToString();
     }
+
+    public static string ToHexRgb(this Color color)
+    {
+        var builder = new StringBuilder();
+        builder.Append("#");
+        builder.Append(color.R8.ToString("X2"));
+        builder.Append(color.G8.ToString("X2"));
+        builder.Append(color.B8.ToString("X2"));
+        return builder.ToString();
+    }
 }
 
 public class FormatRule
