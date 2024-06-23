@@ -34,9 +34,11 @@ public class GDPrintTarget : LogTarget
                 GD.Print(outputText);
                 break;
             case LogLevel.Warn:
+                GD.Print(outputText);
                 GD.PushWarning(outputText);
                 break;
             case LogLevel.Error:
+                GD.Print(outputText);
                 GD.PrintErr(outputText);
                 break;
         }
