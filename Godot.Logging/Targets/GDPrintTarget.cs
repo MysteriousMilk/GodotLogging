@@ -43,4 +43,9 @@ public class GDPrintTarget : LogTarget
                 break;
         }
     }
+
+    internal override void Clear()
+    {
+        // Not possible to clear the Godot log written with GD.Print. So, do nothing.
+    }
 }

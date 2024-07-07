@@ -162,6 +162,17 @@ public sealed class GodotLogger
     }
 
     /// <summary>
+    /// Clears the log by clearing all assocaited <see cref="LogTarget"/> objects.
+    /// </summary>
+    public void ClearLog()
+    {
+        foreach (var target in Configuration.Targets)
+        {
+            target.Clear();
+        }
+    }
+
+    /// <summary>
     /// Creates a <see cref="LogEventInfo"/> using the current call stack.
     /// </summary>
     /// <returns>An initialized <see cref="LogEventInfo"/> without the message.</returns>

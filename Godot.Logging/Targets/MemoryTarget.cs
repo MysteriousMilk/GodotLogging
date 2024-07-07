@@ -58,4 +58,12 @@ public class MemoryTarget : LogTarget
             builder.AppendLine(line);
         return builder.ToString();
     }
+
+    /// <summary>
+    /// Clears the log information associated with this <see cref="LogTarget"/>.
+    /// </summary>
+    internal override void Clear()
+    {
+        lineBuffer.Clear();
+    }
 }

@@ -33,4 +33,15 @@ public class FileTarget : LogTarget
 
         file.StoreLine(outputText);
     }
+
+    /// <summary>
+    /// Clears the log information associated with this <see cref="LogTarget"/>.
+    /// </summary>
+    internal override void Clear()
+    {
+        if (file.IsOpen())
+            file.Close();
+
+        file = FileAccess.Open(filename, FileAccess.ModeFlags.Write);
+    }
 }

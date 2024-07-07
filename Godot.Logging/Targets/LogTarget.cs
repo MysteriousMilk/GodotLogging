@@ -61,4 +61,9 @@ public abstract class LogTarget
     {
         config = cfg;
     }
+
+    /// <summary>
+    /// Clears the log information associated with this <see cref="LogTarget"/>.
+    /// </summary>
+    internal abstract void Clear();
 }

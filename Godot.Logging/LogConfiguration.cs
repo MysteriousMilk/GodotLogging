@@ -141,6 +141,20 @@ public class LogConfiguration
     }
 
     /// <summary>
+    /// Gets the first <see cref="LogTarget"/> of a given type.
+    /// </summary>
+    /// <typeparam name="T">The derived <see cref="LogTarget"/> type.</typeparam>
+    /// <param name="targetName">The name of the target to find.</param>
+    /// <returns>A <see cref="LogTarget"/> of the specified derived type, or null if not found.</returns>
+    public T GetTarget<T>(string targetName) where T : LogTarget
+    {
+        if (!targets.ContainsKey(targetName))
+            return null;
+
+        return (T)targets[targetName];
+    }
+
+    /// <summary>
     /// Registers a <see cref="LogTarget"/> with the <see cref="LogConfiguration"/>.
     /// </summary>
     /// <param name="target">The <see cref="LogTarget"/> to register.</param>
