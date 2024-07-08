@@ -82,6 +82,14 @@ public class LogConfiguration
             TextColor = Colors.Red
         };
         ApplyFormattingRule(errorRule);
+
+        FormatRule exceptionRule = new FormatRule()
+        {
+            FormatText = "[${level}][${classname}.${methodname}] ${message}",
+            FormatLogLevel = LogLevel.Exception,
+            TextColor = Colors.Red
+        };
+        ApplyFormattingRule(exceptionRule);
     }
 
     /// <summary>
